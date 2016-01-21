@@ -17,7 +17,7 @@ app.get("/", function(req,res){
 	res.send(word1+" "+word2)
 })
 
-app.listen(3030)
+app.listen(env.PORT || 3030)
 
 
 
