@@ -14,7 +14,7 @@ app.get("/", function(req,res){
 	word1 = words[word1]
 	word2 = words[word2]
 	console.log("sent pair "+word1+" "+word2)
-	res.send(word1+" "+word2+"<p></p><a href='/'>Generate Another</a>")
+	res.send("Team "+word1+" "+word2+"<p></p><a href='/'>Generate Another</a>")
 })
 
 app.listen(process.env.PORT || 3030)
